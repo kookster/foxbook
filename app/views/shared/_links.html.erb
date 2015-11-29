@@ -20,6 +20,10 @@
     <%= link_to('Find Friends', find_friends_path)%>
   </h5>
   <h5>
+    <%= fa_icon 'envelope-o' %>
+    <%= link_to('Invite Friend', new_user_invitation_path)%>
+  </h5>
+  <h5>
     <%= fa_icon 'pencil' %>
     <%= link_to 'Edit Profile', edit_user_path(current_user) %>
   </h5>

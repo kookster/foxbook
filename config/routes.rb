@@ -2,7 +2,15 @@ Rails.application.routes.draw do
 
   resources :posts
   resources :comments, only: [:create, :destroy]
-  devise_for :users
+
+  # devise_for :users
+  devise_for :users, :skip => [:registrations]
+
+  as :user do
+    get 'users/edit' => 'devise/registrations#edit', :as => 'edit_user_registration'
+    put 'users/:id' => 'devise/registrations#update', :as => 'registration'
+  end
+
   resources :users do
     member do
       get :friends
