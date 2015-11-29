@@ -25,7 +25,6 @@ group :development do
   gem 'guard-rspec', '~> 4.2.8'
 end
 
-
 group :development, :test do
   gem 'sqlite3'
 end
@@ -38,6 +37,7 @@ group :production do
 end
 
 gem 'devise'
+gem 'devise_invitable'
 gem 'carrierwave'
 gem 'friendly_id', '~> 5.0.0'
 
