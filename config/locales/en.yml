@@ -20,4 +20,16 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  socify:
+    site_name: Foxbook
+    home_description: Foxbook is a place where foxes can communicate together.
+  home:
+    about:
+      title: ABOUT
+      what: What?
+      what_answer_html: Foxbook is a social networking app built using Ruby on Rails and <a href="https://github.com/sudharti/socify">Socify</a>.<br />It's free &amp; completely open source. You can check the source on <a href="https://github.com/kookster/foxbook"><i class="fa fa-github"></i> Github</a>.
+      why: Why?
+      why_answer_html: Because foxes can't always see each other as often as they would like. Sometimes, they live far away from their friends and family.
+      how: How?
+      how_answer_html: As stated above it's a Ruby on Rails application. Frontend is developed using Twitter Bootstrap. Database is SQLite for development and Postgresql for production.
+      links_html: <a href="https://github.com/sudharti/socify" class="btn btn-warning"><i class="fa fa-star"></i> Star it</a> <a href="https://github.com/sudharti/socify" class="btn btn-primary"><i class="fa fa-code-fork"></i> Fork it</a>
